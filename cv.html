@@ -4,30 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fabrizio Cuozzo — CV</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 
 :root{
-  --bg:       #F0F2F5;
+  --bg:       #F4F6FA;
   --surface:  #FFFFFF;
-  --border:   #E2E6EA;
-  --ink:      #1A1D23;
-  --body:     #3D4451;
-  --muted:    #8A93A2;
-  --accent:   #0066FF;
-  --accent2:  #00C2A8;
-  --accent3:  #FF6B35;
-  --accent4:  #7C3AED;
-  --accent5:  #059669;
+  --border:   #E0E5EF;
+  --ink:      #0D1530;
+  --body:     #3D4A66;
+  --muted:    #6A7791;
+  --accent:   #1B4FD8;
+  --accent2:  #0EA5E9;
+  --accent3:  #0D1530;
+  --accent4:  #4F46E5;
+  --accent5:  #1E3A8A;
   --r:        12px;
   --shadow:   0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.06);
   --shadow-h: 0 4px 16px rgba(0,0,0,.12), 0 8px 32px rgba(0,0,0,.08);
 }
 
 body{
-  font-family:'Roboto',sans-serif;
+  font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   background:var(--bg);
   color:var(--ink);
   font-size:14px;
@@ -45,7 +45,7 @@ body{
    TOP NAV (section anchors)
 ══════════════════════════════════ */
 .topnav{
-  position:sticky;top:0;z-index:100;
+  position:sticky;top:64px;z-index:100;
   background:rgba(255,255,255,.92);
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border);
@@ -69,7 +69,7 @@ body{
   padding:6px 12px;border-radius:6px;
   transition:color .15s,background .15s;
 }
-.topnav a:hover{color:var(--accent);background:rgba(0,102,255,.06);}
+.topnav a:hover{color:var(--accent);background:rgba(27,79,216,.06);}
 
 /* ══════════════════════════════════
    HERO
@@ -127,7 +127,7 @@ body{
 .chip svg{width:13px;height:13px;flex-shrink:0;color:var(--accent);}
 .chip.cta{background:var(--accent);color:#fff;border-color:transparent;}
 .chip.cta svg{color:#fff;}
-.chip.cta:hover{box-shadow:0 4px 16px rgba(0,102,255,.35);}
+.chip.cta:hover{box-shadow:0 4px 16px rgba(27,79,216,.35);}
 
 /* hero right — availability badge */
 .hero-right{
@@ -138,8 +138,8 @@ body{
 }
 .avail-badge{
   display:flex;align-items:center;gap:8px;
-  background:rgba(5,150,105,.08);
-  border:1px solid rgba(5,150,105,.2);
+  background:rgba(30,58,138,.08);
+  border:1px solid rgba(30,58,138,.2);
   border-radius:8px;padding:8px 14px;
   font-size:.75rem;font-weight:600;
   color:var(--accent5);
@@ -150,8 +150,8 @@ body{
   animation:pulse 2s infinite;
 }
 @keyframes pulse{
-  0%,100%{box-shadow:0 0 0 0 rgba(5,150,105,.5);}
-  50%{box-shadow:0 0 0 6px rgba(5,150,105,0);}
+  0%,100%{box-shadow:0 0 0 0 rgba(30,58,138,.5);}
+  50%{box-shadow:0 0 0 6px rgba(30,58,138,0);}
 }
 .location-badge{
   font-family:'Roboto Mono',monospace;
@@ -312,12 +312,12 @@ body{
   font-size:.6rem;font-weight:500;
   letter-spacing:.08em;
   border-radius:4px;padding:2px 7px;
-  background:rgba(0,102,255,.07);
+  background:rgba(27,79,216,.07);
   color:var(--accent);
 }
-.badge.teal{background:rgba(0,194,168,.1);color:var(--accent2);}
-.badge.orange{background:rgba(255,107,53,.1);color:var(--accent3);}
-.badge.purple{background:rgba(124,58,237,.1);color:var(--accent4);}
+.badge.teal{background:rgba(14,165,233,.1);color:var(--accent2);}
+.badge.orange{background:rgba(13,21,48,.1);color:var(--accent3);}
+.badge.purple{background:rgba(79,70,229,.1);color:var(--accent4);}
 
 .exp-bullets{list-style:none;display:flex;flex-direction:column;gap:4px;}
 .exp-bullets li{
@@ -367,12 +367,12 @@ body{
 }
 /* dev card highlight */
 .skill-card.dev{
-  border-color:rgba(124,58,237,.25);
-  background:rgba(124,58,237,.03);
+  border-color:rgba(79,70,229,.25);
+  background:rgba(79,70,229,.03);
 }
 .skill-card.dev .skill-tag{
-  background:rgba(124,58,237,.06);
-  border-color:rgba(124,58,237,.2);
+  background:rgba(79,70,229,.06);
+  border-color:rgba(79,70,229,.2);
   color:var(--accent4);font-weight:500;
 }
 
@@ -435,7 +435,7 @@ body{
   display:flex;align-items:flex-start;gap:7px;
   transition:border-color .15s,background .15s;
 }
-.corso:hover{border-color:var(--accent2);background:rgba(0,194,168,.03);}
+.corso:hover{border-color:var(--accent2);background:rgba(14,165,233,.03);}
 .corso-dot{
   width:5px;height:5px;border-radius:50%;
   background:var(--accent2);flex-shrink:0;margin-top:5px;
@@ -533,13 +533,13 @@ body{
   font-family:'Roboto Mono',monospace;
   font-size:.62rem;font-weight:500;letter-spacing:.06em;
   padding:3px 8px;border-radius:5px;
-  background:rgba(0,102,255,.08);color:var(--accent);
-  border:1px solid rgba(0,102,255,.15);
+  background:rgba(27,79,216,.08);color:var(--accent);
+  border:1px solid rgba(27,79,216,.15);
   white-space:nowrap;
 }
-.proj-badge.orange{background:rgba(255,107,53,.08);color:var(--accent3);border-color:rgba(255,107,53,.2);}
-.proj-badge.purple{background:rgba(124,58,237,.08);color:var(--accent4);border-color:rgba(124,58,237,.2);}
-.proj-badge.green{background:rgba(5,150,105,.08);color:var(--accent5);border-color:rgba(5,150,105,.2);}
+.proj-badge.orange{background:rgba(13,21,48,.08);color:var(--accent3);border-color:rgba(13,21,48,.2);}
+.proj-badge.purple{background:rgba(79,70,229,.08);color:var(--accent4);border-color:rgba(79,70,229,.2);}
+.proj-badge.green{background:rgba(30,58,138,.08);color:var(--accent5);border-color:rgba(30,58,138,.2);}
 .proj-desc{font-size:.8rem;color:var(--body);margin-bottom:10px;line-height:1.6;}
 .proj-results{
   display:flex;flex-wrap:wrap;gap:8px;
@@ -556,8 +556,8 @@ body{
    TESTIMONIAL
 ══════════════════════════════════ */
 .testimonial-card{
-  background:linear-gradient(135deg,rgba(0,102,255,.04) 0%,rgba(0,194,168,.04) 100%);
-  border:1px solid rgba(0,102,255,.15);
+  background:linear-gradient(135deg,rgba(27,79,216,.04) 0%,rgba(14,165,233,.04) 100%);
+  border:1px solid rgba(27,79,216,.15);
   border-radius:var(--r);
   padding:20px 24px;
   margin-bottom:12px;
@@ -580,6 +580,14 @@ body{
   font-family:'Roboto Mono',monospace;letter-spacing:.05em;
 }
 
+.sitenav{position:sticky;top:0;z-index:120;background:rgba(244,246,250,.9);backdrop-filter:blur(10px);border-bottom:1px solid #E0E5EF}
+.sitenav .in{max-width:1120px;margin:auto;padding:0 22px;height:64px;display:flex;justify-content:space-between;align-items:center}
+.sitenav .brand{font-weight:800;letter-spacing:-.02em;font-size:1.1rem;color:#0D1530;text-decoration:none}
+.sitenav .brand b{color:#1B4FD8}
+.sitenav nav{display:flex;gap:6px}
+.sitenav nav a{padding:8px 16px;border-radius:99px;font-weight:600;font-size:.95rem;color:#58637C;text-decoration:none}
+.sitenav nav a.on{background:#0D1530;color:#fff}
+@media(max-width:520px){.sitenav nav a{padding:8px 11px;font-size:.88rem}}
 </style>
 </head>
 <body>
@@ -587,6 +595,7 @@ body{
 <div id="prog"></div>
 
 <!-- ══ NAV ══════════════════════════════════════════════════════════ -->
+<header class="sitenav"><div class="in"><a class="brand" href="index.html">Fabrizio <b>Cuozzo</b></a><nav><a href="index.html">Chi sono</a><a class="on" href="cv.html">CV</a><a href="app.html">App</a></nav></div></header>
 <nav class="topnav">
   <span class="topnav-brand">FC / 2025</span>
   <div class="topnav-links">
@@ -704,7 +713,7 @@ body{
         <div class="exp-card e1">
           <div class="exp-period">2023<br><span class="exp-now">Oggi</span></div>
           <div>
-            <div class="exp-role">Senior Hospitality Suite Specialist &amp; Project Manager</div>
+            <div class="exp-role">Project Manager &amp; Senior Hospitality Suite Specialist</div>
             <div class="exp-co">Zucchetti Hospitality Srl &nbsp;<span class="badge">Software House</span></div>
             <ul class="exp-bullets">
               <li>Gestione end-to-end di 7–10 progetti simultanei di startup per strutture ricettive, con utilizzo di strumenti formali di project management: SAL, Financial Report, Risk Log e documenti di progetto strutturati</li>
@@ -826,8 +835,8 @@ body{
         <div class="proj-header">
           <div class="proj-title">Migrazione Opera → Scrigno · Baglioni Hotels</div>
           <div class="proj-meta">
-            <span class="proj-badge" style="background:rgba(0,194,168,.08);color:var(--accent2);border-color:rgba(0,194,168,.2);">GpDati / Zucchetti</span>
-            <span class="proj-badge" style="background:rgba(0,194,168,.08);color:var(--accent2);border-color:rgba(0,194,168,.2);">9 hotel</span>
+            <span class="proj-badge" style="background:rgba(14,165,233,.08);color:var(--accent2);border-color:rgba(14,165,233,.2);">GpDati / Zucchetti</span>
+            <span class="proj-badge" style="background:rgba(14,165,233,.08);color:var(--accent2);border-color:rgba(14,165,233,.2);">9 hotel</span>
           </div>
         </div>
         <div class="proj-desc">
@@ -935,7 +944,7 @@ body{
         <div class="sec-line"></div>
       </div>
 
-      <div class="skill-card" style="--si-bg:rgba(0,102,255,.08)">
+      <div class="skill-card" style="--si-bg:rgba(27,79,216,.08)">
         <div class="skill-card-head">
           <div class="skill-icon">🏨</div>
           <div class="skill-card-title">PMS Conosciuti</div>
@@ -947,7 +956,7 @@ body{
         </div>
       </div>
 
-      <div class="skill-card" style="--si-bg:rgba(0,194,168,.08)">
+      <div class="skill-card" style="--si-bg:rgba(14,165,233,.08)">
         <div class="skill-card-head">
           <div class="skill-icon">🔗</div>
           <div class="skill-card-title">Channel Manager &amp; Booking</div>
@@ -960,7 +969,7 @@ body{
         </div>
       </div>
 
-      <div class="skill-card dev" style="--si-bg:rgba(124,58,237,.1)">
+      <div class="skill-card dev" style="--si-bg:rgba(79,70,229,.1)">
         <div class="skill-card-head">
           <div class="skill-icon">⚡</div>
           <div class="skill-card-title">Sviluppo Tool Custom</div>
@@ -985,7 +994,7 @@ body{
         </div>
       </div>
 
-      <div class="skill-card" style="--si-bg:rgba(5,150,105,.08)">
+      <div class="skill-card" style="--si-bg:rgba(30,58,138,.08)">
         <div class="skill-card-head">
           <div class="skill-icon">🎯</div>
           <div class="skill-card-title">Aree Funzionali</div>
