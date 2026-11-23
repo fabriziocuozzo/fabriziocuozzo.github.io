@@ -8,5 +8,6 @@ const APPS=[
 {n:"Pianificatore Pasti",i:"🍝",d:"Griglia settimanale dei pasti, piatti della cucina italiana, lista della spesa e stampa.",s:"presto",u:""},
 {n:"Cantina Digitale",i:"🍷",d:"Tieni traccia delle bottiglie della tua cantina, ovunque tu sia.",s:"presto",u:""}];
 const el=document.getElementById("apps");
-APPS.forEach((a,k)=>{const on=a.s==="online"&&a.u;el.insertAdjacentHTML("beforeend",`<article class="app k${k%3+1}"><i>${a.i}</i><h3>${a.n}</h3><p>${a.d}</p><span class="badge${on?" ok":""}">${on?"Online":"In arrivo"}</span>${on?`<br><a class="go" href="${a.u}">Apri l'app →</a>`:""}</article>`)});
+// Si mostrano solo le app online: le altre restano qui sopra e riappaiono quando passano a s:"online"
+APPS.filter(a=>a.s==="online"&&a.u).forEach((a,k)=>{const on=a.s==="online"&&a.u;el.insertAdjacentHTML("beforeend",`<article class="app k${k%3+1}"><i>${a.i}</i><h3>${a.n}</h3><p>${a.d}</p><span class="badge${on?" ok":""}">${on?"Online":"In arrivo"}</span>${on?`<br><a class="go" href="${a.u}">Apri l'app →</a>`:""}</article>`)});
 </script></body></html>
