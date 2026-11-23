@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Filo · Fabrizio Cuozzo</title><meta name="description" content="Filo: una lavagna libera per disegnare flussi, mappe e schemi, da soli o in compagnia. Trova il filo delle tue idee."><meta property="og:title" content="Filo · Trova il filo delle tue idee"><meta property="og:description" content="Una lavagna libera per disegnare flussi, mappe e schemi, con sotto-lavagne, immagini e condivisione."><meta property="og:image" content="https://fccowork.it/immagini/filo-vista-generale.jpg"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🚴%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="style.css">
+<style>
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:6px 0 34px}
+.cta{display:inline-block;background:var(--blue);color:#fff;font-weight:800;padding:13px 26px;border-radius:99px;transition:transform .2s,box-shadow .2s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 14px 26px -14px rgba(27,79,216,.7)}
+.ghost{font-weight:700;color:var(--mut);padding:13px 6px}
+figure.shot{margin:0 0 54px;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:12px;box-shadow:0 22px 40px -28px rgba(13,21,48,.45)}
+figure.shot img{display:block;width:100%;height:auto;border-radius:calc(var(--r) - 8px)}
+figure.shot figcaption{color:var(--mut);font-size:.92rem;padding:12px 8px 4px}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:-.03em;line-height:1.15;margin:0 0 12px}
+.sec{margin:0 0 54px}
+.sec p.t{color:var(--mut);max-width:720px;font-size:1.08rem}
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-top:22px}
+.feat div{border-radius:var(--r);padding:24px;border:1px solid rgba(13,21,48,.08)}
+.feat div:nth-child(3n+1){background:var(--p-blue)}.feat div:nth-child(3n+2){background:var(--p-lav)}.feat div:nth-child(3n+3){background:var(--p-sage)}
+.feat i{font-style:normal;font-size:1.9rem;display:block;margin-bottom:6px}
+.feat h3{font-size:1.1rem;letter-spacing:-.02em;font-weight:800;margin-bottom:4px}
+.feat p{color:var(--mut);font-size:.96rem}
+.safe{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.safe ul{margin:12px 0 0 20px;color:var(--mut)}
+.safe li{margin:5px 0}
+.safe a{color:var(--blue);font-weight:700}
+.end{text-align:center;margin:60px 0 0}
+.end p{color:var(--mut);margin:6px 0 20px}
+</style></head><body><div class="bar" id="bar"></div><header class="nav"><div class="in"><a class="brand" href="index.html">Fabrizio <b>Cuozzo</b></a><nav><a href="index.html">Chi sono</a><a href="cv.html">CV</a><a href="app.html" class="on">App</a></nav></div></header>
+<main class="wrap page">
+<p class="kick">App</p>
+<h1><em>Filo</em></h1>
+<p class="lead">Trova il filo delle tue idee. Una lavagna libera per disegnare flussi, mappe e schemi, da soli o in compagnia.</p>
+<div class="hero-actions"><a class="cta" href="https://filo.fccowork.it">Apri Filo →</a><a class="ghost" href="app.html">← Tutte le app</a></div>
+
+<figure class="shot"><img src="immagini/filo-vista-generale.jpg" alt="Vista generale di un flusso diviso in tre lavagne collegate" width="1800" height="777"><figcaption>Una lavagna di esempio: un flusso diviso in tre lavagne. Ogni box può nascondere una sotto-lavagna, e la vista generale le mostra tutte insieme.</figcaption></figure>
+
+<section class="sec"><h2>A cosa serve</h2><p class="t">Quando un'idea, un processo o un progetto ha bisogno di essere visto per essere capito. Parti da una lavagna vuota e disegni come ti viene, oppure scrivi i passaggi uno per riga e Filo li trasforma in un diagramma. Poi lo sistemi, lo condividi e lo porti con te.</p></section>
+
+<section class="sec"><h2>Cosa puoi fare</h2>
+<div class="feat">
+<div><i>✏️</i><h3>Disegna e collega</h3><p>Box, forme, note, icone e frecce che restano agganciate quando sposti i pezzi. Colori e stili per far leggere il flusso a colpo d'occhio.</p></div>
+<div><i>✨</i><h3>Genera da testo</h3><p>Una riga è un passo, una domanda diventa una scelta sì/no. Dal testo nascono flussi, mappe mentali e organigrammi.</p></div>
+<div><i>🗂️</i><h3>Sotto-lavagne</h3><p>Apri qualsiasi box come lavagna a sé, anche più volte annidata. Quando serve, la vista generale mostra tutto l'insieme.</p></div>
+<div><i>🖼️</i><h3>Immagini nel flusso</h3><p>Incolla o trascina una foto: viene ridimensionata da sola e la colleghi agli altri elementi come un qualsiasi box.</p></div>
+<div><i>👥</i><h3>Condividi</h3><p>Invita una persona per email, in sola lettura o in modifica, e vedi i cambiamenti quasi in tempo reale. Per mostrare una lavagna a chiunque c'è il link pubblico di sola lettura.</p></div>
+<div><i>📤</i><h3>Esporta</h3><p>Immagine PNG di una lavagna, oppure un archivio ZIP con tutte le lavagne, la vista generale e l'indice. Hai sempre una copia dei tuoi dati in JSON.</p></div>
+</div></section>
+
+<figure class="shot"><img src="immagini/filo-flusso.jpg" alt="Un flusso con una scelta sì/no e due box che contengono sotto-lavagne" width="1600" height="672" loading="lazy"><figcaption>Il primo livello dello stesso esempio: i box con il pallino blu contengono una sotto-lavagna. Con un doppio clic la apri.</figcaption></figure>
+
+<section class="sec"><h2>Sicura e tua</h2>
+<div class="safe"><p>Ogni lavagna è privata finché non decidi di condividerla.</p>
+<ul><li>Accesso con email e password, più la <b>verifica in due passaggi</b> con la tua app di autenticazione.</li>
+<li>I dati sono ospitati nell'<b>Unione Europea</b> (Irlanda).</li>
+<li>Puoi <b>scaricare i tuoi dati</b> o <b>eliminare l'account</b> in qualsiasi momento, direttamente dall'app.</li>
+<li>Maggiori dettagli nell'<a href="https://filo.fccowork.it/privacy.html">informativa sulla privacy</a>.</li></ul></div></section>
+
+<section class="sec"><h2>Funziona ovunque</h2><p class="t">Dal computer e dal telefono, direttamente nel browser, senza installare niente. Se vuoi puoi anche aggiungerla come app: dal menu del browser scegli «Installa» e Filo avrà la sua icona.</p></section>
+
+<div class="end"><h2>Prova Filo</h2><p>Registrati con la tua email e inizia la tua prima lavagna.</p><a class="cta" href="https://filo.fccowork.it">Apri Filo →</a></div>
+</main>
+<footer><div class="wrap">Di mestiere faccio il consulente nell'hospitality da oltre 25 anni: tecnologia, alberghi, persone e tante storie da raccontare. Ho percorso l'Italia per lavoro, ora voglio percorrere il mondo per passione. Ma questo spazio è dedicato alle cose più belle: quelle che faccio per passione, non per lavoro.<br><br><a href="cv.html">Vedi il CV</a> · <a href="mailto:fabriziocuozzo@gmail.com">fabriziocuozzo@gmail.com</a> · Preganziol (TV)</div></footer>
+<script>addEventListener("scroll",()=>{const h=document.documentElement;document.getElementById("bar").style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%"},{passive:true});</script>
+</body></html>
