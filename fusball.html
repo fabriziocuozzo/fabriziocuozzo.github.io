@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fusball · Fabrizio Cuozzo</title><meta name="description" content="Fusball: l'app per segnare le partite di calcio balilla 2 contro 2, con storico, statistiche, ELO e badge."><meta property="og:title" content="Fusball · Il calcio balilla con i numeri veri"><meta property="og:description" content="Tabellone a schermo intero, storico, statistiche, classifica ELO e badge per le partite di calcio balilla."><meta property="og:image" content="https://fccowork.it/immagini/fusball-tabellone.jpg"><link rel="icon" href="immagini/fusball-icona.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<style>
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:6px 0 34px}
+.cta{display:inline-block;background:var(--blue);color:#fff;font-weight:800;padding:13px 26px;border-radius:99px;transition:transform .2s,box-shadow .2s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 14px 26px -14px rgba(27,79,216,.7)}
+.ghost{font-weight:700;color:var(--mut);padding:13px 6px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:0 0 54px}
+.shots figure{margin:0;background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:10px;box-shadow:0 22px 40px -28px rgba(13,21,48,.45)}
+.shots img{display:block;width:100%;height:auto;border-radius:calc(var(--r) - 8px)}
+.shots figcaption{color:var(--mut);font-size:.9rem;padding:10px 6px 2px}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:-.03em;line-height:1.15;margin:0 0 12px}
+.sec{margin:0 0 54px}
+.sec p.t{color:var(--mut);max-width:720px;font-size:1.08rem}
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-top:22px}
+.feat div{border-radius:var(--r);padding:24px;border:1px solid rgba(13,21,48,.08)}
+.feat div:nth-child(3n+1){background:var(--p-blue)}.feat div:nth-child(3n+2){background:var(--p-lav)}.feat div:nth-child(3n+3){background:var(--p-sage)}
+.feat i{font-style:normal;font-size:1.9rem;display:block;margin-bottom:6px}
+.feat h3{font-size:1.1rem;letter-spacing:-.02em;font-weight:800;margin-bottom:4px}
+.feat p{color:var(--mut);font-size:.96rem}
+.safe{background:var(--surf);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.safe ul{margin:12px 0 0 20px;color:var(--mut)}
+.safe li{margin:5px 0}
+.end{text-align:center;margin:60px 0 0}
+.end p{color:var(--mut);margin:6px 0 20px}
+</style></head><body><div class="bar" id="bar"></div><header class="nav"><div class="in"><a class="brand" href="index.html">Fabrizio <b>Cuozzo</b></a><nav><a href="index.html">Chi sono</a><a href="cv.html">CV</a><a href="app.html" class="on">App</a></nav></div></header>
+<main class="wrap page">
+<p class="kick">App</p>
+<h1><em>Fusball</em></h1>
+<p class="lead">Il calcio balilla con i numeri veri. Segni le partite 2 contro 2 con un tocco e scopri chi vince, con chi e quanto.</p>
+<div class="hero-actions"><a class="cta" href="https://fusball.fccowork.it">Apri Fusball →</a><a class="ghost" href="app.html">← Tutte le app</a></div>
+
+<div class="shots">
+<figure><img src="immagini/fusball-tabellone.jpg" alt="Il tabellone: due quadrati grandi, blu e rosso, con il punteggio 7 a 5" width="387" height="837"><figcaption>Il tabellone a schermo intero: un tocco sul quadrato è un gol.</figcaption></figure>
+<figure><img src="immagini/fusball-home.jpg" alt="La home con partite, gol, leader ELO e coppia top" width="387" height="837" loading="lazy"><figcaption>La home: i numeri del gruppo, chi c'è oggi e la sfida del giorno.</figcaption></figure>
+<figure><img src="immagini/fusball-statistiche.jpg" alt="Classifica delle coppie con percentuale di vittorie" width="387" height="837" loading="lazy"><figcaption>Le statistiche di persone e coppie, con miglior e peggior coppia.</figcaption></figure>
+<figure><img src="immagini/fusball-elo.png" alt="Grafico dell'andamento ELO dei giocatori" width="316" height="683" loading="lazy"><figcaption>La classifica ELO partita dopo partita.</figcaption></figure>
+</div>
+
+<section class="sec"><h2>A cosa serve</h2><p class="t">A smettere di discutere su chi ha vinto di più. Scegli i quattro giocatori, parti col tabellone e a fine partita il risultato è salvato. Lo storico, le statistiche e la classifica si aggiornano da soli. Le schermate qui sopra sono un esempio con giocatori inventati.</p></section>
+
+<section class="sec"><h2>Cosa puoi fare</h2>
+<div class="feat">
+<div><i>⚽</i><h3>Tabellone a schermo intero</h3><p>Due quadrati grandi, blu e rosso, che si leggono anche da lontano. Obiettivo da 6 a 10 gol, scarto minimo e timer facoltativo di 5 o 10 minuti, con golden goal in parità.</p></div>
+<div><i>👥</i><h3>Giocatori e storico</h3><p>I giocatori si salvano da soli e si suggeriscono mentre scrivi. Lo storico si cerca per persona o coppia, e una partita sbagliata si può correggere o annullare.</p></div>
+<div><i>📊</i><h3>Statistiche</h3><p>Vittorie, serie, gol fatti e subiti per persone e coppie. I record: le partite più lunghe, più combattute e più nette.</p></div>
+<div><i>📈</i><h3>Classifica ELO</h3><p>Ogni giocatore ha un punteggio che sale e scende con i risultati, con il grafico dell'andamento.</p></div>
+<div><i>🏅</i><h3>Badge e podio del mese</h3><p>In fiamme, Cappotto, Rimonta e altri badge da conquistare. Ogni mese il podio, il cannoniere e il muro.</p></div>
+<div><i>🎲</i><h3>Sfida del giorno</h3><p>Dai presenti propone le squadre più equilibrate in base all'ELO, con la probabilità di vittoria. Oppure mescola le coppie a caso.</p></div>
+</div></section>
+
+<section class="sec"><h2>Chi può scrivere</h2>
+<div class="safe"><p>Le partite le registra solo chi ha il PIN. Tutti gli altri possono entrare come ospiti, con lo stesso link, e guardare storico, statistiche e badge senza poter cambiare niente.</p>
+<ul><li>Condividi il risultato di una partita come immagine.</li>
+<li>Esporta le partite e le statistiche in CSV, stampa la classifica in PDF o scarica un backup completo.</li></ul></div></section>
+
+<section class="sec"><h2>Funziona ovunque</h2><p class="t">Da telefono, tablet e computer, direttamente nel browser. Se vai in un posto senza rete, le partite restano in coda e si salvano da sole appena torna la connessione. Dal menu del browser puoi anche scegliere «Installa» per avere la sua icona.</p></section>
+
+<div class="end"><h2>Prova Fusball</h2><p>Apri l'app e guarda come va il gruppo.</p><a class="cta" href="https://fusball.fccowork.it">Apri Fusball →</a></div>
+</main>
+<footer><div class="wrap">Fabrizio Cuozzo - <a href="mailto:fabriziocuozzo@gmail.com">fabriziocuozzo@gmail.com</a> - 2026</div></footer>
+<script>addEventListener("scroll",()=>{const h=document.documentElement;document.getElementById("bar").style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%"},{passive:true});</script>
+</body></html>
